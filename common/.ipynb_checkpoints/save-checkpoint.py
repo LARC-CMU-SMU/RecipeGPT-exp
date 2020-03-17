@@ -1,7 +1,7 @@
-from datetime import datetime
-from utils.path import dir_HugeFiles
-import pickle
 import os
+import pickle
+from datetime import datetime
+dir_HugeFiles = '../data/'
 
 def current_time():
     date_time = datetime.now()
