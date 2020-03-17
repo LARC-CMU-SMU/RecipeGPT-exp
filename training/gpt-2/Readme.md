@@ -1,0 +1,1 @@
+please download the gpt-2 from https://github.com/helenalee1994/gpt-2
