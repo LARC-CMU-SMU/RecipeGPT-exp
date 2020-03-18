@@ -36,7 +36,7 @@ By default, the project assumes the following directory structure:
     +-- ...
 
 ## Dataset
-We download use the textual content of [Recipe1M](http://pic2recipe.csail.mit.edu/). That file is called ```layer1.json```
+We download and utilize the textual content of [Recipe1M](http://pic2recipe.csail.mit.edu/). That file is called ```layer1.json```
 
 
 ## Environment
