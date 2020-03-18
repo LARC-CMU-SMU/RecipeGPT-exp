@@ -37,7 +37,7 @@ By default, the project assumes the following directory structure:
     ¦       
     ¦                                           # Details of our experiments as described in the paper
     ¦   +-- notebook 6                          # Commands of fine-tuning/training the model
-    ¦   +-- notebook 7                          # Ask the model the generated the title/ingredients/instructions 
+    ¦   +-- notebook 7                          # Ask the model to generate the title/ingredients/instructions 
     ¦   +-- notebook 8                          # Evaluate the model perplexity
     ¦ 
     +-- common                                  # Import numpy, pickle, ... etc common packages
