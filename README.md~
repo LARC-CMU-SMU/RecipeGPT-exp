@@ -40,3 +40,4 @@ We download the layer1.json from [Recipe1M](https://arxiv.org/pdf/1909.07881.pdf
 conda create -n recipegpt python=3.5 anaconda
 pip install tensorflow-gpu==1.12.0 or pip install tensorflow==1.12.0
 pip install -r requirements.txt
+

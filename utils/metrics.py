@@ -13,6 +13,26 @@ class metrics:
         self.y_true = [word for word in list_true if word != 'nan']
         self.y_pred = [word for word in list_pred if word != 'nan']
         
+     # without frequency weighted
+    def precision(self):
+        if len(self.y_pred): 
+            return len(set(self.y_true) & set(self.y_pred))/len(set(self.y_pred))
+        else:
+            return 0
+    def recall(self):
+        if len(self.y_true):
+            return len(set(self.y_true) & set(self.y_pred))/len(set(self.y_true))
+        else:
+            return 1
+    def f1(self):
+        precision = self.precision()
+        recall = self.recall()
+        try:
+            f1 = 2*precision*recall/(precision + recall)
+        except ZeroDivisionError:
+            f1 = 0
+        return f1
+        
     #frequency weighted metrics
     ''' 
     def f1_freq(self):
@@ -44,22 +64,4 @@ class metrics:
             return score/len(n1c)
     '''
         
-    # without frequency weighted
-    def precision(self):
-        if len(self.y_pred): 
-            return len(set(self.y_true) & set(self.y_pred))/len(set(self.y_pred))
-        else:
-            return 0
-    def recall(self):
-        if len(self.y_true):
-            return len(set(self.y_true) & set(self.y_pred))/len(set(self.y_true))
-        else:
-            return 1
-    def f1(self):
-        precision = self.precision()
-        recall = self.recall()
-        try:
-            f1 = 2*precision*recall/(precision + recall)
-        except ZeroDivisionError:
-            f1 = 0
-        return f1
+   

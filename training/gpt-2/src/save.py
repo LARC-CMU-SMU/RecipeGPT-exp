@@ -40,7 +40,7 @@ def make_dir(filename):
         os.makedirs(dir_path)
         print('make dir')
         
-def load_pickle(filename):
+def isfile(filename):
     with open(filename, 'rb') as gfp:
         r = pickle.load(gfp)
     return r
@@ -73,6 +73,7 @@ def to_one_file(filename, max_document, overwrite = False, n_fields = 3):
     if os.path.isdir(filename):
         documents = []
         for (dirpath, _, fnames) in os.walk(filename):
+            fnames.sort()
             print(dirpath)
             for fname in tqdm.tqdm(fnames):
                 path = os.path.join(dirpath, fname)
@@ -84,3 +85,8 @@ def to_one_file(filename, max_document, overwrite = False, n_fields = 3):
     for field in range(n_fields):
         to_write = '\n'.join(documents[0+field::n_fields])
         save(dirpath[:-1]+'_one%d.txt'%(field), to_write, overwrite)
+        
+def load_pickle(filename):
+    with open(filename, 'rb') as gfp:
+        r = pickle.load(gfp)
+    return r

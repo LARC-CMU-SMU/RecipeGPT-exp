@@ -8,8 +8,7 @@ import zss
 from ete3 import Tree
 from gensim.models import KeyedVectors
 gensim_model = KeyedVectors.load_word2vec_format('../data/vocab.bin', binary = True)
-vocabulary = gensim_model.vocab.keys() # usuage:gensim_model.get_vector('cook')
-
+vocabulary = gensim_model.vocab.keys()
 
 class Node(object):
     def __init__(self, label, nodetype):
@@ -191,6 +190,7 @@ def stem(x):
     return [{'word':d['word'], 'ingredient':[]} for d in x]
 
 '''Example of usuage
+
 from utils.tree import instr2tree, tree_distance, build_tree
 from utils.evaluation import spacy_extension
 treemaker = instr2tree()

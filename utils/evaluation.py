@@ -112,29 +112,3 @@ class evaluation:
         tree_dist = tree_distance(ori_tree, gen_tree)
         normed = tree_dist/(ori_nodes+gen_nodes)
         return normed
-    
-    '''can only be call in notebooks
-    def to_bleu(self):
-        to_write = {'%s_i'%(self.ori):'',
-                    '%s_i'%(self.gen):'',
-                    '%s_d'%(self.ori):'',
-                    '%s_d'%(self.gen):''}
-        
-        for i, v in self.dic.items():
-            to_write['%s_i'%(self.ori)] += self.add_space(' $ '.join(v['%s_ingr'%(self.ori)]))+ ' $ \n'
-            to_write['%s_i'%(self.gen)] += self.add_space(' $ '.join(v['%s_ingr'%(self.gen)])) + ' $ \n'
-            
-            to_write['%s_d'%(self.ori)] += self.add_space(v['%s_instr'%(self.ori)])+ '\n'
-            to_write['%s_d'%(self.gen)] += self.add_space(v['%s_instr'%(self.gen)])+ '\n'
-        
-        for k, v in to_write.items():
-            save('../../to_gpt2/generation_%s.txt'%(k), v ,overwrite = True)
-        !eval {"perl multi-bleu.perl ../../to_gpt2/generation_%s_i.txt < ../../to_gpt2/generation_%s_i.txt" %(self.ori, self.gen)}
-        !eval {"perl multi-bleu.perl ../../to_gpt2/generation_%s_d.txt < ../../to_gpt2/generation_%s_d.txt" %(self.ori, self.gen)}
-    
-        !eval {"rouge -f ../../to_gpt2/generation_%s_i.txt ../../to_gpt2/generation_%s_i.txt --avg"%(self.ori, self.gen)}
-        !eval {"rouge -f ../../to_gpt2/generation_%s_d.txt ../../to_gpt2/generation_%s_d.txt --avg"%(self.ori, self.gen)}
-        
-        print()
-        
-    '''

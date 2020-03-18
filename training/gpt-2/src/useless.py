@@ -47,38 +47,41 @@ class Sampler(object):
 
     'Fairly' means that the distribution is the same as sampling from one concatenated chunk,
     but without crossing chunk boundaries."""
+    
+    '''
+    this version only shuffle the order of ingredients; the rest remains the same
+    '''
 
     def __init__(self, 
                  chunks, 
-                 shuffle_ingredients=True, 
-                 shuffle_fields=True, 
+                 shuffle_ingredients = True,
+                 shuffle_fields = False,
                  seed=None,
                  max_ingred = None, 
                  max_token = 512):
+        
+        if not shuffle_ingredients:
+            print('have not implemented in load_dataset_fkg')
+        if shuffle_fields:
+            print('have not implemented in load_dataset_fkg')
         
         self.chunks = chunks #[recipe for recipe in chunks if len(recipe)<= max_token]
         self.n_documents = len(self.chunks)
         self.rs = np.random.RandomState(seed=seed)
         self.seed = seed
-        self.shuffle_ingredients = shuffle_ingredients
-        self.shuffle_fields = shuffle_fields
         self.max_ingred = max_ingred
         
         # shuffle-related
-        self.targets = {' <start-directions>': [1279, 9688, 12, 12942, 507, 29],
-                        ' <start-ingredients>': [1279, 9688, 12, 278, 23320, 29],
-                        ' <start-title>': [1279, 9688, 12, 7839, 29]}
+        self.targets = {' <start-ingredients>': [1279, 9688, 12, 278, 23320, 29],
+                        ' <end-ingredients>': [1279,437,12,278,23320,29]}
         self.end_tag = [1279, 437, 12, 278, 23320, 29]
         
-    def sample(self, length): #, shuffle_ingredients = True, shuffle = True):
+    def sample(self, length):
         while True:
             index = self.rs.randint(0, self.n_documents)
             tokens = self.chunks[index]
-            if self.shuffle_fields:
-                tokens = self.shuffle(tokens)
-            elif self.shuffle_ingredients:
-                tokens = self.shuffle(tokens, ingred_only = True)
-                
+            tokens = self.shuffle(tokens)
+            
             # BPE encoding for '<|endoftext|>'
             tokens += [27, 91, 437, 1659, 5239, 91, 29]
             # import pdb; pdb.set_trace()
@@ -107,28 +110,23 @@ class Sampler(object):
             
         return  self.targets[' <start-ingredients>'] +sum(output, []) + self.end_tag
 
-    def shuffle(self, encoded_file, ingred_only = False):
+    def shuffle(self, encoded_file):
         ''' main version
         Args: encoded_file: a list encodes e.g. ' <start-title>easy, crunchy hot dogs <end-title> <start-ingr...'
         '''
         random.seed(self.seed)
         idx_targets = {}
         # read list
-        start, end, output = 0, 0, []
-        for idx, token in enumerate(encoded_file):
-            if encoded_file[idx: idx+2] ==[1279, 9688]:
-                end = idx
-                if start != 0 and self.shuffle_ingredients:
-                    field = encoded_file[start-1:end]
-                    field = self.shuff_ingredients(field)
-                else:
-                    field = encoded_file[start:end]
-                output.append(field)
+        idx, start, end, output = 0, 0, 0, []
+        while idx < len(encoded_file):
+            idx +=1
+            if encoded_file[idx: idx+6] == self.targets[' <start-ingredients>']:
                 start = idx
-        output.append(encoded_file[start:])
-        
-        if not ingred_only:
-            # shuffle each fields
-            random.shuffle(output)
-            
-        return sum(output, [])
+            if encoded_file[idx: idx+6] == self.targets[' <end-ingredients>']: 
+                end = idx
+        if not start or not end:
+            return encoded_file
+        ingr_field = encoded_file[start:end+6]
+        ingr_field = self.shuff_ingredients(ingr_field)
+        encoded_file = encoded_file[:start]+  ingr_field + encoded_file[end+6:]
+        return encoded_file

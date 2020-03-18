@@ -9,29 +9,10 @@ import tensorflow as tf
 import tqdm
 import re
 
-from . import model, sample, encoder
+from .import model, sample, encoder
 from .path import path_to_model
 from .load_dataset import load_dataset
 from .save import save, make_dir, datetime
-
-
-def clean_line(line):
-    '''
-    Args:
-        line: a string, such as food name, sentences...
-    '''
-    # all lowercase
-    line = str(line)
-    line = line.lower()
-    # only reserve number and alphabets
-    line = re.sub(r'[^a-z0-9+()/?!.,]', ' ', line)
-    # add space before punctuation
-    line = re.sub('([.,!?()])', r' \1 ', line)
-    line = re.sub('\s{2,}', ' ', line)
-    # remove extra spaces
-    line = re.sub(' +',' ',line).strip()
-    return line
-
 
 def interact_model(
     model_name='117M',
@@ -66,9 +47,9 @@ def interact_model(
      special setting meaning no restrictions. 40 generally is a good value.
     :top_p=0.0 : Float value controlling diversity. Implements nucleus sampling,
      overriding top_k if set to a value > 0. A good setting is 0.9.
-    :filename='' : path to a directory
     :overwrite=False : whether to overwrite the y_pred
-    
+    :filename: A directory that contains many .txt files, each of them is contains a input we want to use
+    :tag: The name of the new directory that saves the generated text in corresponding .txt files
     
     """
     if batch_size is None:
@@ -88,6 +69,7 @@ def interact_model(
     start_encode = datetime.now()
     # load every files
     documents = []
+
     if os.path.isdir(filename):
         # Directory
         for (dirpath, _, fnames) in os.walk(filename):
@@ -130,7 +112,8 @@ def interact_model(
                                          })[:, len(context_tokens):]
                 for i in range(batch_size):
                     text = enc.decode(out[i])
-                    to_write = text.replace('\n','').split('<')[0]
+                    #to_write = text.replace('\n','').split('<')[0]
+                    to_write = text.replace('\n','')
                     dir_path, fname = os.path.split(path)
                     save(os.path.join(dir_path[:-1], 'generation%s'%(tag), fname), to_write, overwrite, print_ = False)
                     
