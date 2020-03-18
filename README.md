@@ -29,8 +29,8 @@ By default, the project assumes the following directory structure:
     ¦ 
     +-- training                                
     ¦   +-- gpt-2                               # The source code modified from OpenAI GPT-2
-    ¦       +--src/load_dataset_pad.py          # Padding and fields shuffing
-    ¦       +--src/conditional_gen_web.py       # Input .txt files and receive the output in .txt files
+    ¦       +--src/load_dataset_pad.py              # Padding and fields shuffing
+    ¦       +--src/conditional_gen_web.py           # Input .txt files and receive the output in .txt files
     ¦       +--train_ppl_pickle.py                  # The main script for fine-tuning with recipe data
     ¦       +--train_ppl_scratch.py                 # The main script for training from scratch with recipe data
     ¦       ...
