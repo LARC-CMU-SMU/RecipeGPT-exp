@@ -6,7 +6,7 @@ This paper can be downlaoded at [arxiv](https://arxiv.org/pdf/1909.07881.pdf)
 Please contact ```helenalee.bt01@gmail.com``` if you have any questions or problems.
 
 ## Slides 
-Our poster presented in WWW'20 could be found at [here](https://drive.google.com/open?id=1bln5W9KmlxFwrpA3KRlpU30n4yGTg44U)
+Our poster presented in WWW'20 could be found at [here](https://drive.google.com/file/d/1DD5BJRRQZ4qATP_w0TjOfXYKN4EYs2zY/view?usp=sharing)
 
 ## Project Structure
 By default, the project assumes the following directory structure:
@@ -34,7 +34,9 @@ By default, the project assumes the following directory structure:
     +-- ...
 
 ## Dataset
-We download the layer1.json from [Recipe1M](https://arxiv.org/pdf/1909.07881.pdf)
+We download use the textual content of [Recipe1M](https://arxiv.org/pdf/1909.07881.pdf)
+The file is called ```layer1.json```
+
 
 ## Environment
 ```
