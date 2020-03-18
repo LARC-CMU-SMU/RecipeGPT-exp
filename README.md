@@ -28,16 +28,16 @@ By default, the project assumes the following directory structure:
     ¦   +-- notebook 9                          # Compare the generated texts compared with human-written texts
     ¦ 
     +-- training                                
-    ¦   +-- gpt-2                               # The source code modified  from OpenAI GPT-2
-    ¦       +--src/load_dataset_pad.py          # Padding and field shuffing
+    ¦   +-- gpt-2                               # The source code modified from OpenAI GPT-2
+    ¦       +--src/load_dataset_pad.py          # Padding and fields shuffing
     ¦       +--src/conditional_gen_web.py       # Input .txt files and receive the output in .txt files
     ¦       +--train_ppl_pickle.py                  # The main script for fine-tuning with recipe data
-    ¦       +--train_ppl_scratch.py                 # Rhe main script for training from scratch with recipe data
+    ¦       +--train_ppl_scratch.py                 # The main script for training from scratch with recipe data
     ¦       ...
     ¦       
     ¦   +-- notebook 6                          # Commands of fine-tuning/training the model
     ¦   +-- notebook 7                          # Ask the model the generated the title/ingredients/instructions 
-    ¦   +-- notebook 8                          # Evalaute the model perplexity
+    ¦   +-- notebook 8                          # Evaluate the model perplexity
     ¦ 
     +-- common                                  # Import numpy, pickle, ... etc common packages
     +-- utils                                   # Some modules related to model evaluation
