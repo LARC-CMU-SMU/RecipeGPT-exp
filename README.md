@@ -23,9 +23,12 @@ By default, the project assumes the following directory structure:
     ¦   +-- Download.md                         # Download link
     ¦ 
     +-- analysis                                
-    ¦   +-- notebook 1-0, 1-1, 2, 3             # Useful for data pre-processing
+    ¦   +-- notebook 1-1, 1-2, 2, 3             # Useful for data pre-processing
     ¦   +-- notebook 4, 5                       # Useful for analyzing the generated texts
     ¦   +-- notebook 9                          # Compare the generated texts with human-written texts
+    ¦   +-- notebook 10                         # Explain how we convert the users' inputs to model input
+    ¦   +-- notebook 11                         # Explain the 'compare' feature on the website
+
     ¦ 
     +-- training                                
     ¦   +-- gpt-2                               # The source code modified from OpenAI GPT-2
