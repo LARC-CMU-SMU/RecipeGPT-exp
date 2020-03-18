@@ -25,7 +25,7 @@ By default, the project assumes the following directory structure:
     +-- analysis                                
     ¦   +-- notebook 1-0, 1-1, 2, 3             # Useful for data pre-processing
     ¦   +-- notebook 4, 5                       # Useful for analyzing the generated texts
-    ¦   +-- notebook 9                          # Compare the generated texts compared with human-written texts
+    ¦   +-- notebook 9                          # Compare the generated texts with human-written texts
     ¦ 
     +-- training                                
     ¦   +-- gpt-2                               # The source code modified from OpenAI GPT-2
