@@ -4,6 +4,7 @@ This is the github repo for
 ```Helena H. Lee, Ke Shu, Palakorn Achananuparp, Philips Kokoh Prasetyo, Yue Liu, Ee-Peng Lim, and Lav R. Varshney. 2020. RecipeGPT: Generative Pre-training Based Cooking Recipe Generation and Evaluation System. In Companion Proceedings of the Web Conference 2020 (WWW 20 Companion), April 20-24, 2020, Taipei, Taiwan. ACM, New York, NY, USA, 4 pages. https://doi.org/10.1145/3366424.3383536 ```
 
 This paper can be downloaded at [arxiv](https://arxiv.org/pdf/1909.07881.pdf)
+We also provide an online website that allows the users to generate cooking recipes at [https://recipegpt.org/]
 
 Please contact ```helenalee.bt01@gmail.com``` if you have any questions or problems.
 
