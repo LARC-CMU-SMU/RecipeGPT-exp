@@ -43,8 +43,8 @@ By default, the project assumes the following directory structure:
     +-- utils                                   # Some modules related to model evaluation
 
 ## Dataset
-We download and utilize the textual content of [Recipe1M](http://pic2recipe.csail.mit.edu/) That file is called ```layer1.json```
-We utilize the ```food_taxonomy.txt``` from [Here](https://www.researchgate.net/publication/288838055_Simple_food_taxonomy_compiled_from_Wikipedia_pages) to create an ingredient database .
+* We download and utilize the textual content of [Recipe1M](http://pic2recipe.csail.mit.edu/) That file is called ```layer1.json```
+* We utilize the ```food_taxonomy.txt``` from [Here](https://www.researchgate.net/publication/288838055_Simple_food_taxonomy_compiled_from_Wikipedia_pages) to create an ingredient database .
 
 
 ## Environment
