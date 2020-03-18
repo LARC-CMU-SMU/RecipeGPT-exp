@@ -16,29 +16,32 @@ Our poster presented in WWW'20 could be found at [here](https://drive.google.com
 By default, the project assumes the following directory structure:
 
  
-    +-- data                                    # Files that we save
-    ¦   +-- vocab.bin                          # The textual description of recipe, AMT annotation, and nutritional properties
-    ¦   +-- Recipe54k-trained embeddings        # Some pickle files
-    ¦   +-- combined.csv                        # 1000 recipes with crowdsourcing annotations
-    ¦   +-- ... 
+    +-- data                                    # Files that are within GitHub's file size limit
+    ¦   +-- vocab.bin                           # A word embedding model, will be used in utils.tree
+    ¦
+    +-- big_data                                # Files that exceeds GitHub's file size limit
+    ¦   +-- ...                                 # Please download them from google drive
     ¦ 
-    +-- RQ1                                     # How we conduct data preprocessing and crowdsourcing to answer the Research Question 1
-    ¦   +-- ... 
+    +-- analysis                                
+    ¦   +-- notebook 1-0, 1-1, 2, 3             # Useful for data pre-processing
+    ¦   +-- notebook 4, 5                       # Useful for analyzing the generated texts
+    ¦   +-- notebook 9                          # Compare the generated texts compared with human-written texts
     ¦ 
-    +-- RQ2                                     # Models trained to answer the Research Question 2 and saved to csv/ and pickle/
-    ¦   +-- RQ2_original                        # How we prepare the results on paper, it is not well-structured and requires dic_20190819.pickle
-    ¦   ¦   +-- ...
-    ¦   +-- RQ2_reproducible                    # We selectively reproduce the best models in our study and re-organize the notebooks. It requires dic_20191203.pickle
-    ¦   ¦   +-- Best models in RQ2.ipynb        # Best non-nutritional model: NB-BoW + LR
-    ¦   ¦                                       # Best overall model:         Pre-trained GloVe + Nutritional information + LGBM
-    ¦   ¦                                       # Second best overall model:  NB-BoW + Nutritional information + LR
-    ¦   ¦                                       # Nutrition-only model:       Nutritional information + LR
-    +-- pickle     
-    +-- csv     
-    +-- ...
+    +-- training                                
+    ¦   +-- gpt-2                               # Modified the source code from OpenAI GPT-2
+    ¦       +--train_ppl_pickle.py                  # The main script for fine-tuning with recipe data
+    ¦       +--train_ppl_scratch.py                 # Rhe main script for training from scratch with recipe data
+    ¦
+    ¦   +-- notebook 6                          # Commands of fine-tuning/training the model
+    ¦   +-- notebook 7                          # Ask the model the generated the title/ingredients/instructions 
+    ¦   +-- notebook 8                          # Evalaute the model perplexity
+    ¦ 
+    +-- common                                  # Import numpy, pickle, ... etc common packages
+    +-- utils                                   # Some modules related to model evaluation
 
 ## Dataset
 We download and utilize the textual content of [Recipe1M](http://pic2recipe.csail.mit.edu/). That file is called ```layer1.json```
+We download and utilize the food taxonomy to create an ingredient database from [Here](https://www.researchgate.net/publication/288838055_Simple_food_taxonomy_compiled_from_Wikipedia_pages). That file is called ```food_taxonomy.txt```
 
 
 ## Environment
