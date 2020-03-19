@@ -1,1 +1,1 @@
- <start-title>cranberry-orange friendship bread <end-title> <start-ingredients>orange zest$orange juice$instant vanilla pudding$cinnamon$eggs$baking powder$vanilla$salt$cranberries$flour$sugar$baking soda$amish starter$oil$ <end-ingredients> <start-directions>
+ <start-title>cranberry-orange friendship bread <end-title> <start-ingredients>amish starter$baking soda$cinnamon$salt$vanilla$cranberries$orange juice$eggs$instant vanilla pudding$orange zest$baking powder$sugar$flour$oil$ <end-ingredients> <start-directions>

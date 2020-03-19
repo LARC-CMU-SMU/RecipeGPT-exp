@@ -1,1 +1,1 @@
- <start-title>roast pork egg foo yung <end-title> <start-ingredients>water chestnut$tablespoon oil$eggs$salt$black mushrooms$sugar$pork$cabbage$oil$bamboo shoot$ <end-ingredients> <start-directions>
+ <start-title>roast pork egg foo yung <end-title> <start-ingredients>black mushrooms$cabbage$water chestnut$sugar$eggs$pork$salt$tablespoon oil$oil$bamboo shoot$ <end-ingredients> <start-directions>

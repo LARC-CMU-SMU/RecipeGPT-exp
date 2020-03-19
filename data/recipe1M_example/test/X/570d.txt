@@ -1,1 +1,1 @@
- <start-title>simple baked alaska <end-title> <start-ingredients>egg$vanilla$cream of tartar$sugar$cakes cake$ice cream$ <end-ingredients> <start-directions>
+ <start-title>simple baked alaska <end-title> <start-ingredients>ice cream$vanilla$egg$cream of tartar$cakes cake$sugar$ <end-ingredients> <start-directions>
