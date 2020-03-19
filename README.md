@@ -24,8 +24,9 @@ By default, the project assumes the following directory structure:
     ¦   +-- recipe1M_ny.pickle                  # Recipe1M processed with ny-times-parser        
     ¦   +-- data.pickle                         # The data after our own data pre-processing
     ¦ 
-    ¦   +-- food_taxonomy.txt                   # The file from
-    ¦                                             https://colab.research.google.com/drive/1_7KrN6UFsNId5uk23t8L4gMlCxUidkfj
+    ¦   +-- food_taxonomy.txt                   # Ingredients database
+    ¦   +-- database.pickle                     # Ingredients root noun database
+    ¦   
     ¦   
     +-- recipe1M_1218                           # files created by notebook 3 using data.pickle
     ¦   +-- chunk.train                         # Essential training data
