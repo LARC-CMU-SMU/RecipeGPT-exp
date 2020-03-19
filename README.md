@@ -20,7 +20,7 @@ By default, the project assumes the following directory structure:
     ¦   +-- vocab.bin                           # A word embedding model, will be used in utils.tree
     ¦
     +-- big_data                                # Files that exceeds GitHub's file size limit
-    ¦   +-- Download.md                         # Download link
+    ¦   +-- ...                                 
     ¦ 
     +-- analysis                                
     ¦   +-- notebook 1-1, 1-2, 2, 3             # Useful for data pre-processing
