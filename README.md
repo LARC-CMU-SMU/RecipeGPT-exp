@@ -60,7 +60,7 @@ pip install -r requirements.txt
 ```
 tensorflow version:
 ```
-pip install tensorflow-gpu>=1.12.0
-pip install tensorflow>=1.12.0
+pip install tensorflow-gpu==1.12.0
+pip install tensorflow==1.12.0
 ```
 ## 
