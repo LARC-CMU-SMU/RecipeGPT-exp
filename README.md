@@ -52,9 +52,20 @@ By default, the project assumes the following directory structure:
 * We utilize ```vocab.bin```, the word embedding trained by [Salvador](http://pic2recipe.csail.mit.edu/im2recipe.pdf)
 
 ## Google colab
-We create a notebook [google-colab-noebook](https://colab.research.google.com/drive/1_7KrN6UFsNId5uk23t8L4gMlCxUidkfj) to assist you easily re-produce our work.
+We create a notebook [google-colab-noebook](https://colab.research.google.com/drive/1_7KrN6UFsNId5uk23t8L4gMlCxUidkfj) to assist you re-produce our work.
 We show examples of model training, model inference, and model evaluation. 
-It's a  brief summary of notebook 6,7,0
+It's a simplified version of our notebook 6,7,9
+
+## Download related files
+We share the dataset, model, and related files at [Google-Drive](https://drive.google.com/drive/folders/1h82H1QEnBHCetSYT-yQr_usBEo7E6cIX?usp=sharing)
+
+Please download and put them under the correct directory.
+RecipeGPT-exp/big_data/
+RecipeGPT-exp/training/gpt-2/models/
+RecipeGPT-exp/recipe1M_1218/
+
+
+
 
 ## Environment
 ```
