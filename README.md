@@ -11,6 +11,10 @@ We also provide an online website that allows the users to generate cooking reci
 
 Please contact ```helenalee.bt01@gmail.com``` if you have any questions or problems.
 
+## Google colab
+We create a notebook [google-colab-notebook](https://colab.research.google.com/drive/1_7KrN6UFsNId5uk23t8L4gMlCxUidkfj) to assist you re-produce our work.
+We show examples of model training, model inference, and model evaluation. 
+It's a simplified version of our notebook 6, 7, 9
 
 ## Project Structure
 By default, the project assumes the following directory structure:
@@ -65,14 +69,7 @@ By default, the project assumes the following directory structure:
     +-- utils                                   # Some modules related to model evaluation
 
 ## Dataset
-* We utilize  ```layer1.json``` , which contains the textual content of [Recipe1M](http://pic2recipe.csail.mit.edu/)(Please click Layers (381 MiB))
-* We utilize ```food_taxonomy.txt``` from [Here](https://www.researchgate.net/publication/288838055_Simple_food_taxonomy_compiled_from_Wikipedia_pages) to create an ingredient database .
-* We utilize ```vocab.bin```, the word embedding trained by [Salvador](http://pic2recipe.csail.mit.edu/im2recipe.pdf)
 
-## Google colab
-We create a notebook [google-colab-notebook](https://colab.research.google.com/drive/1_7KrN6UFsNId5uk23t8L4gMlCxUidkfj) to assist you re-produce our work.
-We show examples of model training, model inference, and model evaluation. 
-It's a simplified version of our notebook 6, 7, 9
 
 ## Download related files
 We share the dataset, model, and related files at [google-drive](https://drive.google.com/drive/folders/1h82H1QEnBHCetSYT-yQr_usBEo7E6cIX?usp=sharing)
@@ -82,7 +79,13 @@ Please download and put them under the correct directory.
 RecipeGPT-exp/big_data/
 RecipeGPT-exp/training/gpt-2/models/
 RecipeGPT-exp/recipe1M_1218/
+
 ```
+* We utilize ```food_taxonomy.txt``` from [Here](https://www.researchgate.net/publication/288838055_Simple_food_taxonomy_compiled_from_Wikipedia_pages) to create an ingredient database .
+* We utilize ```vocab.bin```, the word embedding trained by [Salvador](http://pic2recipe.csail.mit.edu/im2recipe.pdf)
+* We utilize  ```layer1.json``` , which contains the textual content of [Recipe1M](http://pic2recipe.csail.mit.edu/)(Please click Layers (381 MiB) and download your own)
+
+
 
 ## Environment
 ```
