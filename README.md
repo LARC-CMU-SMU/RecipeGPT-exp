@@ -51,6 +51,11 @@ By default, the project assumes the following directory structure:
 * We utilize ```food_taxonomy.txt``` from [Here](https://www.researchgate.net/publication/288838055_Simple_food_taxonomy_compiled_from_Wikipedia_pages) to create an ingredient database .
 * We utilize ```vocab.bin```, the word embedding trained by [Salvador](http://pic2recipe.csail.mit.edu/im2recipe.pdf)
 
+## Google colab
+We create a notebook [google-colab-noebook](https://colab.research.google.com/drive/1_7KrN6UFsNId5uk23t8L4gMlCxUidkfj
+_ to assist you easily re-produce our work.
+We show examples of model training, model inference, and model evaluation. 
+It's a  brief summary of notebook 6,7,0
 
 
 ## Environment
