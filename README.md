@@ -18,7 +18,12 @@ By default, the project assumes the following directory structure:
  
     +-- data                                    # Files that are within GitHub's file size limit
     ¦   +-- vocab.bin                           # A word embedding model, will be used in utils.tree
-    ¦
+    ¦   
+    ¦   +-- recipe1M_example                    # Examples of testing data, n=5
+    ¦       +-- test/X                          # Inputs in testing set (directory of .txt files)
+    ¦       +-- test/y                          # Human-written outputs in testing set (directory of .txt files)
+    ¦   
+    ¦   
     +-- big_data                                # Files that exceeds GitHub's file size limit
     ¦   +-- layer1.pickle                       # Recipe1M from http://pic2recipe.csail.mit.edu/  (Please click Layers (381 MiB))
     ¦   +-- recipe1M_ny.pickle                  # Recipe1M processed with ny-times-parser        
@@ -33,6 +38,7 @@ By default, the project assumes the following directory structure:
     ¦   +-- chunk.val                           # Essential validation data
     ¦   +-- test/X                              # Inputs in testing set (directory of .txt files)
     ¦   +-- test/y                              # Human-written outputs in testing set (directory of .txt files)
+    ¦   
     ¦   
     +-- analysis                                
     ¦   +-- notebook 1-1, 1-2, 2, 3             # Useful for data pre-processing
