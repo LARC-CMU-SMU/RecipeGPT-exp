@@ -56,7 +56,11 @@ By default, the project assumes the following directory structure:
 ## Environment
 ```
 conda create -n recipegpt python=3.5 anaconda
-pip install tensorflow-gpu==1.12.0 or pip install tensorflow==1.12.0
 pip install -r requirements.txt
+```
+tensorflow version:
+```
+pip install tensorflow-gpu>=1.12.0
+pip install tensorflow>=1.12.0
 ```
 ## 
