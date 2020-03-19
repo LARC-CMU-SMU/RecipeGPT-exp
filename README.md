@@ -20,15 +20,26 @@ By default, the project assumes the following directory structure:
     ¦   +-- vocab.bin                           # A word embedding model, will be used in utils.tree
     ¦
     +-- big_data                                # Files that exceeds GitHub's file size limit
-    ¦   +-- ...                                 
+    ¦   +-- layer1.pickle                       # Recipe1M from http://pic2recipe.csail.mit.edu/  (Please click Layers (381 MiB))
+    ¦   +-- recipe1M_ny.pickle                  # Recipe1M processed with ny-times-parser        
+    ¦   +-- data.pickle                         # The data after our own data pre-processing
     ¦ 
+    ¦   +-- food_taxonomy.txt                   # The file from
+    ¦                                             https://colab.research.google.com/drive/1_7KrN6UFsNId5uk23t8L4gMlCxUidkfj
+    ¦   
+    +-- recipe1M_1218                           # files created by notebook 3 using data.pickle
+    ¦   +-- chunk.train                         # Essential training data
+    ¦   +-- chunk.val                           # Essential validation data
+    ¦   +-- test/X                              # Inputs in testing set (directory of .txt files)
+    ¦   +-- test/y                              # Human-written outputs in testing set (directory of .txt files)
+    ¦   
     +-- analysis                                
     ¦   +-- notebook 1-1, 1-2, 2, 3             # Useful for data pre-processing
     ¦   +-- notebook 4, 5                       # Useful for analyzing the generated texts
     ¦   +-- notebook 9                          # Compare the generated texts with human-written texts
     ¦   +-- notebook 10                         # Explain how we convert the users' inputs to model input
     ¦   +-- notebook 11                         # Explain the 'compare' feature on the website
-
+    ¦   
     ¦ 
     +-- training                                
     ¦   +-- gpt-2                               # The source code modified from OpenAI GPT-2
@@ -47,14 +58,14 @@ By default, the project assumes the following directory structure:
     +-- utils                                   # Some modules related to model evaluation
 
 ## Dataset
-* We utilize  ```layer1.json``` , which contains the textual content of [Recipe1M](http://pic2recipe.csail.mit.edu/)
+* We utilize  ```layer1.json``` , which contains the textual content of [Recipe1M](http://pic2recipe.csail.mit.edu/)(Please click Layers (381 MiB))
 * We utilize ```food_taxonomy.txt``` from [Here](https://www.researchgate.net/publication/288838055_Simple_food_taxonomy_compiled_from_Wikipedia_pages) to create an ingredient database .
 * We utilize ```vocab.bin```, the word embedding trained by [Salvador](http://pic2recipe.csail.mit.edu/im2recipe.pdf)
 
 ## Google colab
 We create a notebook [google-colab-notebook](https://colab.research.google.com/drive/1_7KrN6UFsNId5uk23t8L4gMlCxUidkfj) to assist you re-produce our work.
 We show examples of model training, model inference, and model evaluation. 
-It's a simplified version of our notebook 6,7,9
+It's a simplified version of our notebook 6, 7, 9
 
 ## Download related files
 We share the dataset, model, and related files at [google-drive](https://drive.google.com/drive/folders/1h82H1QEnBHCetSYT-yQr_usBEo7E6cIX?usp=sharing)
