@@ -68,7 +68,6 @@ By default, the project assumes the following directory structure:
     +-- common                                  # Import numpy, pickle, ... etc common packages
     +-- utils                                   # Some modules related to model evaluation
 
-## Dataset
 
 
 ## Download related files
@@ -81,8 +80,8 @@ RecipeGPT-exp/training/gpt-2/models/
 RecipeGPT-exp/recipe1M_1218/
 
 ```
-* We utilize ```food_taxonomy.txt``` from [Here](https://www.researchgate.net/publication/288838055_Simple_food_taxonomy_compiled_from_Wikipedia_pages) to create an ingredient database .
-* We utilize ```vocab.bin```, the word embedding trained by [Salvador](http://pic2recipe.csail.mit.edu/im2recipe.pdf)
+* We utilize ```food_taxonomy.txt``` from [Here](https://www.researchgate.net/publication/288838055_Simple_food_taxonomy_compiled_from_Wikipedia_pages) to create an ingredient database . (Download your own or from our google-drive)
+* We utilize ```vocab.bin```, the word embedding trained by [Salvador](http://pic2recipe.csail.mit.edu/im2recipe.pdf) (Already in github)
 * We utilize  ```layer1.json``` , which contains the textual content of [Recipe1M](http://pic2recipe.csail.mit.edu/)(Please click Layers (381 MiB) and download your own)
 
 
