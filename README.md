@@ -52,12 +52,12 @@ By default, the project assumes the following directory structure:
 * We utilize ```vocab.bin```, the word embedding trained by [Salvador](http://pic2recipe.csail.mit.edu/im2recipe.pdf)
 
 ## Google colab
-We create a notebook [google-colab-noebook](https://colab.research.google.com/drive/1_7KrN6UFsNId5uk23t8L4gMlCxUidkfj) to assist you re-produce our work.
+We create a notebook [google-colab-notebook](https://colab.research.google.com/drive/1_7KrN6UFsNId5uk23t8L4gMlCxUidkfj) to assist you re-produce our work.
 We show examples of model training, model inference, and model evaluation. 
 It's a simplified version of our notebook 6,7,9
 
 ## Download related files
-We share the dataset, model, and related files at [Google-Drive](https://drive.google.com/drive/folders/1h82H1QEnBHCetSYT-yQr_usBEo7E6cIX?usp=sharing)
+We share the dataset, model, and related files at [google-drive](https://drive.google.com/drive/folders/1h82H1QEnBHCetSYT-yQr_usBEo7E6cIX?usp=sharing)
 
 Please download and put them under the correct directory.
 ```
