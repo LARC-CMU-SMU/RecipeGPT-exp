@@ -60,12 +60,11 @@ It's a simplified version of our notebook 6,7,9
 We share the dataset, model, and related files at [Google-Drive](https://drive.google.com/drive/folders/1h82H1QEnBHCetSYT-yQr_usBEo7E6cIX?usp=sharing)
 
 Please download and put them under the correct directory.
+```
 RecipeGPT-exp/big_data/
 RecipeGPT-exp/training/gpt-2/models/
 RecipeGPT-exp/recipe1M_1218/
-
-
-
+```
 
 ## Environment
 ```
@@ -76,5 +75,6 @@ tensorflow version:
 ```
 pip install tensorflow-gpu==1.12.0
 pip install tensorflow==1.12.0
+or use the default version in colab
 ```
 ## 
