@@ -84,7 +84,7 @@ RecipeGPT-exp/recipe1M_1218/
 * We utilize ```vocab.bin```, the word embedding trained by [Salvador](http://pic2recipe.csail.mit.edu/im2recipe.pdf) (Already in github)
 * We utilize  ```layer1.json``` , which contains the textual content of [Recipe1M](http://pic2recipe.csail.mit.edu/)(Please click Layers (381 MiB) and download your own)
 
-
+You may need [these files](https://drive.google.com/drive/u/2/folders/1laFJaKjow8Jq8tPATwHpzVl8i3FKN39s) if you want to reproduce notebook 9.
 
 ## Environment
 ```
