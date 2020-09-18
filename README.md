@@ -11,7 +11,7 @@ We also provide an online website that allows the users to generate cooking reci
 
 Please contact ```helenalee.bt01@gmail.com``` if you have any questions or problems.
 
-We forked the [this](https://github.com/nshepperd/gpt-2) implemnetation in order to train and fine-tune gpt-2.
+We forked the [this](https://github.com/nshepperd/gpt-2) implementation in order to train and fine-tune gpt-2.
 
 
 ## Google colab
