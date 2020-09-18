@@ -11,6 +11,9 @@ We also provide an online website that allows the users to generate cooking reci
 
 Please contact ```helenalee.bt01@gmail.com``` if you have any questions or problems.
 
+We forked the [this](https://github.com/nshepperd/gpt-2) implemnetation in order to train and fine-tune gpt-2.
+
+
 ## Google colab
 We create a notebook [google-colab-notebook](https://colab.research.google.com/drive/1_7KrN6UFsNId5uk23t8L4gMlCxUidkfj) to assist you re-produce our work.
 We show examples of model training, model inference, and model evaluation. 
