@@ -5,7 +5,7 @@ This is the github repo for
 
 Our paper can be downloaded at [arxiv](https://arxiv.org/abs/2003.02498)
 
-Our poster can be downloaded at [here](https://drive.google.com/file/d/1DD5BJRRQZ4qATP_w0TjOfXYKN4EYs2zY/view?usp=sharing)
+Our poster can be downloaded at [here](https://1drv.ms/b/s!AnHFRPEgz5RWgeFJIPrzHRZVqF-ETA?e=8SkOMv)
 
 We also provide an online website that allows the users to generate cooking recipes at [https://recipegpt.org/](https://recipegpt.org/)
 
@@ -74,7 +74,7 @@ By default, the project assumes the following directory structure:
 
 
 ## Download related files
-We share the dataset, model, and related files at [google-drive](https://drive.google.com/drive/folders/1h82H1QEnBHCetSYT-yQr_usBEo7E6cIX?usp=sharing)
+We share the dataset, model, and related files at [OneDrive](https://1drv.ms/u/s!AnHFRPEgz5RWuwaBg_RdnTTE2d86?e=BU4DQh)
 
 Please download and put them under the correct directory.
 ```
@@ -87,7 +87,7 @@ RecipeGPT-exp/recipe1M_1218/
 * We utilize ```vocab.bin```, the word embedding trained by [Salvador](http://pic2recipe.csail.mit.edu/im2recipe.pdf) (Already in github)
 * We utilize  ```layer1.json``` , which contains the textual content of [Recipe1M](http://pic2recipe.csail.mit.edu/)(Please click Layers (381 MiB) and download your own)
 
-You may need [these files](https://drive.google.com/drive/u/2/folders/1laFJaKjow8Jq8tPATwHpzVl8i3FKN39s) if you want to reproduce notebook 9.
+You may need [these files](https://1drv.ms/u/s!AnHFRPEgz5RWuzrAlLx66HzY_sUB?e=aMl0d0) if you want to reproduce notebook 9.
 
 ## Environment
 ```
