@@ -15,7 +15,7 @@ We forked the [this](https://github.com/nshepperd/gpt-2) implementation in order
 
 
 ## Google colab
-We create a notebook [google-colab-notebook](https://colab.research.google.com/drive/1_7KrN6UFsNId5uk23t8L4gMlCxUidkfj) to assist you re-produce our work.
+We create a notebook [google-colab-notebook](https://colab.research.google.com/drive/14lQ0WXmqkOZZVLFluF20HZ-vLdHj8AXm?usp=sharing) to assist you re-produce our work.
 We show examples of model training, model inference, and model evaluation. 
 It's a simplified version of our notebook 6, 7, 9
 
