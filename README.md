@@ -15,8 +15,10 @@ We forked the [this](https://github.com/nshepperd/gpt-2) implementation in order
 
 
 ## Google colab
-We create a notebook [google-colab-notebook](https://colab.research.google.com/drive/14lQ0WXmqkOZZVLFluF20HZ-vLdHj8AXm?usp=sharing) to assist you re-produce our work.
-We show examples of model training, model inference, and model evaluation. 
+~~We create a notebook [google-colab-notebook](https://colab.research.google.com/drive/14lQ0WXmqkOZZVLFluF20HZ-vLdHj8AXm?usp=sharing) to assist you re-produce our work.~~
+~~We show examples of model training, model inference, and model evaluation.~~
+Google Colab removed support for Tensorflow 1. It's impossible to reproduce this work via Colab anymore.
+
 It's a simplified version of our notebook 6, 7, 9
 
 ## Project Structure
